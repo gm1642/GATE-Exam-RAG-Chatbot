@@ -53,7 +53,7 @@ This repository serves as a showcase of the project's architecture and research 
 Please send a code request stating your purpose (e.g., academic research, recruitment review, or collaboration) to the repository owner. Access will be granted on a case-by-case basis.
 
 ## 📸 Demo
-![Chatbot Demo](assets/demo_ui.mp4)
+![Chatbot Demo](assets/demo_ui.gif)
 *Figure 2: The student dashboard showing exact retrieval and AI follow-up.*
 
 ---
