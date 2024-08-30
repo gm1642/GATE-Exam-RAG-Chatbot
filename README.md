@@ -5,21 +5,24 @@
 [![Database](https://img.shields.io/badge/Vector%20DB-Weaviate-green)](https://weaviate.io/)
 [![Deployment](https://img.shields.io/badge/Docker-Container-blue?logo=docker)](https://www.docker.com/)
 
-A high-performance **Retrieval-Augmented Generation (RAG)** chatbot designed to help students prepare for the **GATE (Graduate Aptitude Test in Engineering)**. It retrieves exact solutions from past exam papers and uses **Llama-3-8B** to provide intelligent, context-aware explanations and follow-up answers.
+A high-performance **Retrieval-Augmented Generation (RAG)** chatbot designed to help students prepare for the **GATE (Graduate Aptitude Test in Engineering)**. It retrieves exact solutions from past exam papers and uses **Llama-3-8B** to provide intelligent, context-aware explanations.
 
 ## 🏗️ System Architecture
 The system follows a microservices architecture fully containerized with **Docker**.
 ![System Architecture](assets/architecture_v0.2.png)
-*Figure 1: v0.2 Architecture - integrating Mathpix OCR, Weaviate Vector DB, and Llama-3 generation.*
+*Figure 1: v0.2 Architecture - integrating Hybrid OCR, Weaviate Vector DB, and Llama-3 generation.*
 
 ### Key Components
-1.  **Data Pipeline:**
-    * **OCR:** Used **Mathpix** to extract complex mathematical equations (LaTeX) from PDF exam papers.
-    * **Chunking:** Semantic chunking strategies to preserve context.
+1.  **Data Pipeline & OCR Strategy:**
+    * **Exploration:** Evaluated multiple open-source pipelines including **Nougat**, **Tesseract OCR**, **LaTeX OCR**, and **LlamaParse**.
+    * **Decision:** While **LlamaParse** showed promise, it was in an early development phase and suffered from hallucinations.
+    * **Final Stack:** Adopted a hybrid approach using **Mathpix** (Deep Learning-based) for high-fidelity text extraction and **LLaVA** for parsing complex mathematical equations directly from images.
     * **Embedding:** **BGE-Small-EN-v1.5** selected for superior performance on mathematical datasets.
+
 2.  **RAG Engine:**
     * **Vector Store:** **Weaviate** (Self-hosted via Docker).
     * **LLM:** **Llama3:8B-instruct-q2_K** (Quantized) running via **Ollama** for low-latency local inference.
+
 3.  **User Interface:**
     * **Frontend:** **Next.js** with JWT authentication. Features a searchable dropdown for questions.
     * **Backend:** **FastAPI** handling asynchronous requests and MongoDB session storage.
