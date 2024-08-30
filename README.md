@@ -8,7 +8,7 @@
 
 A high-performance **Retrieval-Augmented Generation (RAG)** chatbot designed to help students prepare for the **GATE (Graduate Aptitude Test in Engineering)**. It retrieves exact solutions from past exam papers and uses **Llama-3-8B** to provide intelligent, context-aware explanations.
 
-### 🏗️ System Architecture
+## 🏗️ System Architecture
 The system follows a microservices architecture fully containerized with **Docker**.
 ![System Architecture](assets/architecture_v0.2.png)
 *Figure 1: v0.2 Architecture - integrating Hybrid OCR, Weaviate Vector DB, and Llama-3 generation.*
