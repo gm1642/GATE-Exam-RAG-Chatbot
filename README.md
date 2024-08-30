@@ -49,7 +49,7 @@ We conducted extensive benchmarking to select the optimal model configuration.
 This repository serves as a showcase of the project's architecture and research outcomes. The full source code is hosted in a private repository to protect ongoing research and intellectual property.
 
 **To request access to the codebase:**
-Please send a code request stating your **purpose** (e.g., academic research, recruitment review, or collaboration) to the repository owner. Access will be granted on a case-by-case basis.
+Please send a code request stating your **purpose (e.g., academic research, recruitment review, or collaboration) to the repository owner. Access will be granted on a case-by-case basis.
 
 ## 📸 Demo
 ![Chatbot Demo](assets/demo_ui.png)
