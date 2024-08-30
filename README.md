@@ -1,13 +1,14 @@
 # GATE Exam Chatbot: RAG-Powered Study Assistant
 
 [![Stack](https://img.shields.io/badge/Stack-Next.js%20%7C%20FastAPI-black)]()
+[![Orchestration](https://img.shields.io/badge/Framework-LangChain-1C3C3C?logo=langchain&logoColor=white)](https://www.langchain.com/)
 [![Model](https://img.shields.io/badge/LLM-Llama3%3A8B-blue)](https://ollama.com/)
 [![Database](https://img.shields.io/badge/Vector%20DB-Weaviate-green)](https://weaviate.io/)
 [![Deployment](https://img.shields.io/badge/Docker-Container-blue?logo=docker)](https://www.docker.com/)
 
 A high-performance **Retrieval-Augmented Generation (RAG)** chatbot designed to help students prepare for the **GATE (Graduate Aptitude Test in Engineering)**. It retrieves exact solutions from past exam papers and uses **Llama-3-8B** to provide intelligent, context-aware explanations.
 
-## 🏗️ System Architecture
+### 🏗️ System Architecture
 The system follows a microservices architecture fully containerized with **Docker**.
 ![System Architecture](assets/architecture_v0.2.png)
 *Figure 1: v0.2 Architecture - integrating Hybrid OCR, Weaviate Vector DB, and Llama-3 generation.*
