@@ -45,23 +45,11 @@ We conducted extensive benchmarking to select the optimal model configuration.
 
 *Table 1: Evaluation results showing Llama-3's superior context adherence.*
 
-## 🛠️ Setup & Installation
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/GATE-RAG-Chatbot.git](https://github.com/your-username/GATE-RAG-Chatbot.git)
-    cd GATE-RAG-Chatbot
-    ```
-2.  **Start Services (Docker):**
-    ```bash
-    docker-compose up -d
-    ```
-    *This spins up Weaviate, MongoDB, and the FastAPI backend containers.*
-3.  **Run Frontend:**
-    ```bash
-    cd frontend
-    npm install && npm run dev
-    ```
+## 🔐 Code Access
+This repository serves as a showcase of the project's architecture and research outcomes. The full source code is hosted in a private repository to protect ongoing research and intellectual property.
 
+**To request access to the codebase:**
+Please send a code request stating your **purpose** (e.g., academic research, recruitment review, or collaboration) to the repository owner. Access will be granted on a case-by-case basis.
 ## 📸 Demo
 ![Chatbot Demo](assets/demo_ui.png)
 *Figure 2: The student dashboard showing exact retrieval and AI follow-up.*
